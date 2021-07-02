@@ -1,0 +1,75 @@
+body{
+    background-color: thistle;
+    font-family: 'Castoro', serif;
+}
+#main-nav{
+    padding: 80px 30px;
+}
+.nav-colored{
+    background-color: rgba( 120, 25, 133, 0.4)
+}
+#main-nav .navbar-brand{
+    text-transform: uppercase;
+    color:#ba1441 ;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 0.1cm;
+}
+.navbar-nav li {
+    padding: 0 10px;
+    margin: 0 5px;
+}
+#main-nav .nav-link{
+    color: white;
+    font-size: 1.3em;
+    transition: 0.2s ease-in 0.3s;
+}
+#main-nav .nav-link:hover
+{
+	 color: #d44cb2;
+     font-size: 1.4em;
+}
+section{
+    margin-top: 100px;
+}
+.container{
+    padding-top: 50px;
+    background-color: rgba(120, 25, 133, 0.6);
+}
+.icons{
+    color: black;
+    margin: 0 5px;
+}
+.mail {
+    font-size: 25px;
+}
+.social{
+    font-size: 25px;
+}
+.button{
+    background-color: #46115c;
+    color: white;
+    width:90px;
+    transition: all 0.4s ease-in-out; 
+}
+.button:hover,
+.button:focus {
+        color: pink;
+        border: 1px solid black;
+        box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+        transform: translateY(-0.25em);
+      } 
+#footl{
+    background-color: #968f96;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+@media(min-width:900px)
+{
+    #main-nav{
+        height: 90px;
+    }
+    
+}

@@ -1,0 +1,126 @@
+body{
+    background-color: thistle;
+}
+#main-nav{
+    padding: 80px 30px;
+}
+.nav-colored{
+    background-color: rgba( 35, 156, 186, 0.4)
+}
+#main-nav .navbar-brand{
+    text-transform: uppercase;
+    color:#ba1441 ;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 0.1cm;
+}
+.navbar-nav li {
+    padding: 0 10px;
+    margin: 0 5px;
+}
+#main-nav .nav-link{
+    color: white;
+    font-size: 1.3em;
+    transition: 0.2s ease-in 0.3s;
+}
+#main-nav .nav-link:hover
+{
+	 color: #d44cb2;
+     font-size: 1.4em;
+}
+#column{
+    padding-top: 80px;
+}
+@keyframes slideInFromLeft{
+    0%{
+      transform:translateX(-100%);  
+    }
+    90%{
+        transform: translateX(10%);
+    }
+    100%{
+    transform: translateX(0);
+    }
+}
+#column h1{
+    color: seashell;  
+    animation: 1.2s ease-out  slideInFromLeft;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1 span{
+    background-color: rgba(0,0,0, 0.4);
+}
+#column p{
+    text-shadow:  0 0 1em black;
+    font-weight: bold;
+    font-size: large;
+    color: seashell;
+    margin: 10px 30%;
+    animation: 3s ease-out transitionIn;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+    }
+    To{
+        opacity: 1;
+    }
+}
+.parallax{
+    background: url(me.jpg) no-repeat  fixed 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.btton{
+    background-color: #09e6ab;
+    border-radius: 6%;
+}
+.icons{
+    display: inline;
+    margin:0 5px;
+}
+#foot{
+    padding: 0 10% ;
+    display: flex;
+    justify-content: center;
+}
+ul li a{
+    color: black;
+}
+#foote{
+    text-align: center ;
+    padding-top: 2%;
+}
+#foote h1{
+    font-size: 20px;
+}
+#footl{
+    text-align: center;
+    font-size: small;
+}
+@media(min-width:900px)
+{
+    #column{
+        padding-top: 210px;
+    }
+    #main-nav{
+        height: 70px;
+    }
+    .parallax{
+        background-position: center;
+    }
+}
+.button{
+    color: white;
+    background-color: teal;
+    width: 100px;
+    height: 40px;
+    transition: all 0.2s ease-in;
+}
+.button:hover{
+    background-color: turquoise;
+    
+    width: 105px;
+    height: 45px;
+}
